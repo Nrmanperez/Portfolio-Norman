@@ -29,7 +29,7 @@ export const Header = () => {
         <body class="h-full">
         ```
       */}
-      <div className="min-h-full">
+      <header className='fixed top-0 left-0 right-0 z-50'>
         <Disclosure as="nav" className="bg-white shadow-sm shadow-black">
           {({ open }) => (
             <>
@@ -112,7 +112,7 @@ export const Header = () => {
             </>
           )}
         </Disclosure>
-      </div>
+      </header>
     </>
   )
 }
