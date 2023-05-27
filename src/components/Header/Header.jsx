@@ -8,10 +8,10 @@ const user = {
     'https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2023/04/portafolio-programador.webp',
 }
 const navigation = [
-  { name: 'Team', href: '#', current: false },
+  { name: 'Home', href: '#', current: false },
+  { name: 'About Me', href: '#', current: false },
+  { name: 'Skills', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
 ]
 
 function classNames(...classes) {
