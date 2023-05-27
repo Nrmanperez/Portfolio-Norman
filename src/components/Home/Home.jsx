@@ -1,4 +1,5 @@
 import profile from '../../assets/norman.png'
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 export const Home = () => {
 
@@ -32,18 +33,18 @@ export const Home = () => {
             </span>
           </h1>
         </div>
-        <div>
-          <a href="#">
-            <i></i>
+        <div className='mt-8 flex gap-3'>
+          <a href="#" className='flex items-center justify-center w-12 h-12 border border-red-500 rounded-full'>
+            <i>{<FaFacebookF color='red' size={24} />}</i>
           </a>
-          <a href="#">
-            <i></i>
+          <a href="#" className='flex items-center justify-center w-12 h-12 border border-red-500 rounded-full'>
+            <i>{<FaTwitter color='red' size={24} />}</i>
           </a>
-          <a href="#">
-            <i></i>
+          <a href="#" className='flex items-center justify-center w-12 h-12 border border-red-500 rounded-full'>
+            <i>{<FaInstagram color='red' size={24} />}</i>
           </a>
-          <a href="#">
-            <i></i>
+          <a href="#" className='flex items-center justify-center w-12 h-12 border border-red-500 rounded-full'>
+            <i>{<FaLinkedin color='red' size={24} />}</i>
           </a>
         </div>
       </div>
