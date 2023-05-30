@@ -49,7 +49,7 @@ export const Home = () => {
         </div>
       </div>
       <div className='relative bottom-14 mt-20'>
-        <img src={profile} alt="Profile Norman" className='xl:w-3/4 sm:w-full sm:h-1/3' style={{ minHeight: '62vh', maxHeight: '78vh' }} />
+        <img src={profile} alt="Profile Norman" className='xl:w-2/4 sm:w-full sm:h-1/3' style={{ minHeight: '62vh', maxHeight: '78vh' }} />
       </div>
     </section>
   )
