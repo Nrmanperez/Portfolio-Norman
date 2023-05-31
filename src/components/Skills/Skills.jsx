@@ -1,8 +1,8 @@
 
 export const Skills = () => {
   return (
-    <section className="mt-14 mb-14">
-        <div>
+    <section className="mt-16 mb-16">
+        <div className="mb-16">
             <h2 className="text-center text-7xl">My Skills</h2>
         </div>
         <div className="container mx-auto">

@@ -1,4 +1,4 @@
-import profileAboutMe from '../../assets/NORMAN_BACK.jpg'
+import images from '../../assets/imgs'
 
 export const AboutMe = () => {
   return (
@@ -6,7 +6,7 @@ export const AboutMe = () => {
       <div className="grid grid-cols-2 gap-1">
         <div className='flex justify-center items-center'>
           <div className='p-6'>
-            <img src={profileAboutMe} className='rounded-2xl' style={{ width: '600px' }}  alt="About Me" />
+            <img src={images.profileAboutMe} className='rounded-2xl' style={{ width: '600px' }}  alt="About Me" />
           </div>
         </div>
         <div className='p-6'>
