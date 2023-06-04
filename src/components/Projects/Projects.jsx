@@ -93,7 +93,7 @@ export const Projects = () => {
       ]
 
     return (
-        <section className="container mx-auto mb-16 mt-16">
+        <section id='projects' className="container mx-auto mb-16 mt-16">
             <div>
                 <h2 className="text-center text-7xl">Portfolio</h2>
             </div>

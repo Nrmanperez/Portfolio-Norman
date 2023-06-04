@@ -1,34 +1,36 @@
 import { Disclosure, Menu } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
-const user = {
-  name: 'Norman',
-  email: 'perez.norman30@gmail.com',
-  imageUrl:
-    'https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2023/04/portafolio-programador.webp',
-}
-const navigation = [
-  { name: 'Home', href: '#', current: false },
-  { name: 'About Me', href: '#', current: false },
-  { name: 'Skills', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 export const Header = () => {
+
+  const user = {
+    name: 'Norman',
+    email: 'nperez@nicarao.agency',
+    imageUrl:
+      'https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2023/04/portafolio-programador.webp',
+  }
+  const navigation = [
+    { id: 'home', name: 'Home', href: '#', current: false },
+    { id: 'aboutme', name: 'About Me', href: '#', current: false },
+    { id: 'skills', name: 'Skills', href: '#', current: false },
+    { id: 'projects', name: 'Projects', href: '#', current: false },
+  ]
+  
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
+
+  const scrollTo = () => {
+    scroll.scrollTo('skills', {
+      duration: 500,
+      smooth: true,
+      offset: -80,
+    });
+  };
+
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
       <header className='fixed top-0 left-0 right-0 z-50'>
         <Disclosure as="nav" className="bg-white shadow-sm shadow-black">
           {({ open }) => (
@@ -49,9 +51,15 @@ export const Header = () => {
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
+                          <ScrollLink
+                            key={item.id}
+                            to={item.id}
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                            onClick={scrollTo}
                             className={classNames(
                               item.current
                                 ? 'bg-gray-900 text-white'
@@ -61,7 +69,7 @@ export const Header = () => {
                             aria-current={item.current ? 'page' : undefined}
                           >
                             {item.name}
-                          </a>
+                          </ScrollLink>
                         ))}
                       </div>
                     </div>
@@ -83,18 +91,26 @@ export const Header = () => {
               <Disclosure.Panel className="md:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   {navigation.map((item) => (
-                    <Disclosure.Button
+                    <ScrollLink 
                       key={item.name}
-                      as="a"
-                      href={item.href}
-                      className={classNames(
-                        item.current ? 'text-white' : 'text-black hover:text-red-600',
-                        'block rounded-md px-3 py-2 text-base font-medium'
-                      )}
-                      aria-current={item.current ? 'page' : undefined}
+                      to={item.id}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      onClick={scrollTo}
                     >
-                      {item.name}
-                    </Disclosure.Button>
+                      <Disclosure.Button
+                        className={classNames(
+                          item.current ? 'text-white' : 'text-black hover:text-red-600',
+                          'block rounded-md px-3 py-2 text-base font-medium'
+                        )}
+                        aria-current={item.current ? 'page' : undefined}
+                      >
+                        {item.name}
+                      </Disclosure.Button>
+                    </ScrollLink>
                   ))}
                 </div>
                 <div className="border-t border-gray-700 pb-3 pt-4">
@@ -103,7 +119,7 @@ export const Header = () => {
                       <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
                     </div>
                     <div className="ml-3">
-                      <div className="text-base font-medium leading-none text-white">{user.name}</div>
+                      <div className="text-base font-medium leading-none text-gray-800">{user.name}</div>
                       <div className="text-sm font-medium leading-none text-gray-800">{user.email}</div>
                     </div>
                   </div>

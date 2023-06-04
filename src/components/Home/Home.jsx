@@ -7,6 +7,7 @@ export const Home = () => {
     <section 
       className="mt-16 xl:grid xl:grid-cols-2 sm:flex sm:flex-col sm:justify-center sm:items-center bg-black"
       style={{ height: `calc(100vh - 64px)` }}
+      id='home'
     >
       <div className='xl:text-center xl:m-auto xl:w-auto sm:mt-16'>
         <div className='text-start mb-5'>
