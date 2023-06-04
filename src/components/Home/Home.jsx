@@ -10,8 +10,8 @@ export const Home = () => {
     >
       <div className='xl:text-center xl:m-auto xl:w-auto sm:mt-16'>
         <div className='text-start mb-5'>
-          <p className='text-white text-2xl'>Hello</p>
-          <p className='text-white text-4xl'>I am <span className='text-red-500'>Norman </span>Perez</p>
+          <p className='text-white sm:text-2xl'>Hello</p>
+          <p className='text-white sm:text-4xl'>I am <span className='text-red-500'>Norman </span>Perez</p>
         </div>
         <div>
           <h1 className="text-white text-6xl">
