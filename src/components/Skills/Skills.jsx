@@ -10,59 +10,68 @@ export const Skills = () => {
                 <div className="flex-col">
                     <div>
                         <div className="flex justify-between">
-                            <p className="mb-1 text-lg font-medium dark:text-white">React</p>
-                            <p>45%</p>
+                            <p className="mb-1 text-lg font-bold dark:text-black">React</p>
+                            <p>90%</p>
                         </div>
                         <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                            <div className="h-4 bg-red-500 rounded-full dark:bg-blue-500" style={{ width: '45%' }}></div>
+                            <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '90%' }}></div>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between">
-                            <p className="mb-1 text-lg font-medium dark:text-white">VueJS</p>
-                            <p>45%</p>
+                            <p className="mb-1 text-lg font-bold dark:text-black">VueJS</p>
+                            <p>75%</p>
                         </div>
                         <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                            <div className="h-4 bg-red-500 rounded-full dark:bg-blue-500" style={{ width: '45%' }}></div>
+                            <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '75%' }}></div>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between">
-                            <p className="mb-1 text-lg font-medium dark:text-white">Ruby on Rails</p>
-                            <p>45%</p>
+                            <p className="mb-1 text-lg font-bold dark:text-black">Ruby on Rails</p>
+                            <p>75%</p>
                         </div>
                         <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                            <div className="h-4 bg-red-500 rounded-full dark:bg-blue-500" style={{ width: '45%' }}></div>
+                            <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '75%' }}></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex justify-between">
+                            <p className="mb-1 text-lg font-bold dark:text-black">Bootstrap</p>
+                            <p>90%</p>
+                        </div>
+                        <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
+                            <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '90%' }}></div>
                         </div>
                     </div>
                 </div>
                 <div className="flex-col">
                     <div>
                         <div className="flex justify-between">
-                            <p className="mb-1 text-lg font-medium dark:text-white">NodeJS</p>
-                            <p>45%</p>
+                            <p className="mb-1 text-lg font-bold dark:text-black">NodeJS</p>
+                            <p>80%</p>
                         </div>
                         <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                            <span data-progress="75%" className="loader-liquid" style={{width: '45%'}}></span>
-                            <div className="h-4 bg-red-500 rounded-full dark:bg-blue-500" style={{ width: '45%' }}></div>
+                            <span data-progress="75%" className="loader-liquid" style={{width: '80%'}}></span>
+                            <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '80%' }}></div>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between">
-                            <p className="mb-1 text-lg font-medium dark:text-white">TailwindCSS</p>
-                            <p>45%</p>
+                            <p className="mb-1 text-lg font-bold dark:text-black">TailwindCSS</p>
+                            <p>90%</p>
                         </div>
                             <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                                <div className="h-4 bg-red-500 rounded-full dark:bg-blue-500" style={{ width: '85%' }}></div>
+                                <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '90%' }}></div>
                             </div>
                         </div>
                     <div>
                         <div className="flex justify-between">
-                            <p className="mb-1 text-lg font-medium dark:text-white">NestJS</p>
-                            <p>45%</p>
+                            <p className="mb-1 text-lg font-bold dark:text-black">NestJS</p>
+                            <p>77%</p>
                         </div>
                         <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                            <div className="h-4 bg-red-500 rounded-full dark:bg-blue-500" style={{ width: '45%' }}></div>
+                            <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '77%' }}></div>
                         </div>
                     </div>
                 </div>

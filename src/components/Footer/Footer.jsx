@@ -14,10 +14,10 @@ export const Footer = () => {
       </span>
       <ul className="flex justify-center items-center mt-3 md:mt-0">
         <li className='flex justify-center items-center'>
-            <a href="#" className='text-black mr-6 md:mr-8' style={{ fontSize: '30px' }}>{icons.github}</a>
+            <a href="https://github.com/Nrmanperez" className='text-black mr-6 md:mr-8' style={{ fontSize: '30px' }}>{icons.github}</a>
         </li>
         <li className='flex justify-center items-center'>
-            <a href="#" className='text-black mr-6 md:mr-8' style={{ fontSize: '30px' }}>{icons.Linkedin}</a>
+            <a href="https://www.linkedin.com/in/nrmanperez" className='text-black mr-6 md:mr-8' style={{ fontSize: '30px' }}>{icons.Linkedin}</a>
         </li>
       </ul>
     </div>

@@ -1,21 +1,21 @@
 import images from '../../assets/imgs'
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
 
 export const Home = () => {
 
   return (
     <section 
       className="mt-16 xl:grid xl:grid-cols-2 sm:flex sm:flex-col sm:justify-center sm:items-center bg-black"
-      style={{ height: `calc(100vh - 64px)` }}
+      
       id='home'
     >
       <div className='xl:text-center xl:m-auto xl:w-auto sm:mt-16'>
-        <div className='text-start mb-5'>
+        <div className='text-center xl:text-start xl:mb-5'>
           <p className='text-white sm:text-2xl'>Hello</p>
-          <p className='text-white sm:text-4xl'>I am <span className='text-red-500'>Norman </span>Perez</p>
+          <p className='text-white sm:text-2xl'>I am <span className='text-red-500'>Norman </span>Perez</p>
         </div>
-        <div>
-          <h1 className="text-white text-6xl">
+        <div className='text-center'>
+          <h1 className="text-white sm:text-4xl 2xl:text-6xl">
             <span className="text-left">
               I am{' '}
               <span className="relative">
@@ -34,23 +34,17 @@ export const Home = () => {
             </span>
           </h1>
         </div>
-        <div className='mt-8 flex gap-3'>
-          <a href="#" className='flex items-center justify-center w-12 h-12 border border-red-500 rounded-full'>
-            <i>{<FaFacebookF color='red' size={24} />}</i>
+        <div className='mt-2 xl:mt-8 flex justify-center xl:justify-start gap-3'>
+          <a href="https://github.com/Nrmanperez" className='flex items-center justify-center w-8 xl:w-12 h-8 xl:h-12 border border-red-500 rounded-full'>
+            <i>{<FaGithubSquare color='red' size={24} />}</i>
           </a>
-          <a href="#" className='flex items-center justify-center w-12 h-12 border border-red-500 rounded-full'>
-            <i>{<FaTwitter color='red' size={24} />}</i>
-          </a>
-          <a href="#" className='flex items-center justify-center w-12 h-12 border border-red-500 rounded-full'>
-            <i>{<FaInstagram color='red' size={24} />}</i>
-          </a>
-          <a href="#" className='flex items-center justify-center w-12 h-12 border border-red-500 rounded-full'>
+          <a href="https://www.linkedin.com/in/nrmanperez" className='flex items-center justify-center w-8 xl:w-12 h-8 xl:h-12 border border-red-500 rounded-full'>
             <i>{<FaLinkedin color='red' size={24} />}</i>
           </a>
         </div>
       </div>
-      <div className='relative bottom-14 mt-20'>
-        <img src={images.profile} alt="Profile Norman" className='xl:w-2/4 sm:w-full sm:h-1/3' style={{ minHeight: '62vh', maxHeight: '78vh' }} />
+      <div className='flex justify-center items-center'>
+        <img src={images.profile} alt="Profile Norman" className='w-2/4' style={{ maxWidth: '406px', }} />
       </div>
     </section>
   )
