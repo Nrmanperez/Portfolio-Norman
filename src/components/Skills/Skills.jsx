@@ -44,6 +44,15 @@ export const Skills = () => {
                             <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '90%' }}></div>
                         </div>
                     </div>
+                    <div>
+                        <div className="flex justify-between">
+                            <p className="mb-1 text-lg font-bold dark:text-black">PostgresQL</p>
+                            <p>85%</p>
+                        </div>
+                        <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
+                            <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '85%' }}></div>
+                        </div>
+                    </div>
                 </div>
                 <div className="flex-col">
                     <div>
@@ -72,6 +81,24 @@ export const Skills = () => {
                         </div>
                         <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
                             <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '77%' }}></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex justify-between">
+                            <p className="mb-1 text-lg font-bold dark:text-black">TypeScript</p>
+                            <p>70%</p>
+                        </div>
+                        <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
+                            <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '70%' }}></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex justify-between">
+                            <p className="mb-1 text-lg font-bold dark:text-black">JavaScript</p>
+                            <p>95%</p>
+                        </div>
+                        <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
+                            <div className="h-4 bg-red-500 rounded-full dark:bg-red-500" style={{ width: '95%' }}></div>
                         </div>
                     </div>
                 </div>
