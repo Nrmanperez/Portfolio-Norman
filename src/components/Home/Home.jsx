@@ -5,11 +5,10 @@ export const Home = () => {
 
   return (
     <section 
-      className="mt-16 xl:grid xl:grid-cols-2 sm:flex sm:flex-col sm:justify-center sm:items-center bg-black"
-      
+      className="mt-16 xl:grid xl:grid-cols-2 flex flex-col sm:flex sm:flex-col sm:justify-center sm:items-center bg-black"
       id='home'
     >
-      <div className='xl:text-center xl:m-auto xl:w-auto sm:mt-16'>
+      <div className='xl:text-center xl:m-auto xl:w-auto xl:order-1 order-2 mb-5'>
         <div className='text-center xl:text-start xl:mb-5'>
           <p className='text-white sm:text-2xl'>Hello</p>
           <p className='text-white sm:text-2xl'>I am <span className='text-red-500'>Norman </span>Perez</p>
@@ -43,7 +42,7 @@ export const Home = () => {
           </a>
         </div>
       </div>
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center xl:order-2 order-1'>
         <img src={images.profile} alt="Profile Norman" className='w-2/4' style={{ maxWidth: '406px', }} />
       </div>
     </section>

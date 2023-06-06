@@ -29,9 +29,11 @@ export const Modal = ({ isOpen, onClose, project }) => {
         </div>
         <div className='p-4'>
           <h3 className='text-2xl font-bold mb-4'>Technologies</h3>
-          { project.technologies.map((technologie, index) => (
-            <span key={index} className="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">{technologie}</span>
-          )) }
+          <div className='flex flex-wrap'>
+            { project.technologies.map((technologie, index) => (
+              <span key={index} className="bg-red-100 text-red-800 text-xs font-medium m-auto px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">{technologie}</span>
+            )) }
+          </div>
         </div>
         <div className="p-4 bg-gray-100">
         </div>
