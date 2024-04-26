@@ -73,6 +73,18 @@ export const Skills = () => {
                 ></div>
               </div>
             </div>
+            <div>
+              <div className="flex justify-between">
+                <p className="mb-1 text-lg font-bold dark:text-black">PHP</p>
+                <p>85%</p>
+              </div>
+              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
+                <div
+                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
+                  style={{ width: "85%" }}
+                ></div>
+              </div>
+            </div>
           </div>
           <div className="flex-col">
             <div>
@@ -143,6 +155,20 @@ export const Skills = () => {
                 <div
                   className="h-4 bg-red-500 rounded-full dark:bg-red-500"
                   style={{ width: "95%" }}
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div className="flex justify-between">
+                <p className="mb-1 text-lg font-bold dark:text-black">
+                  Laravel
+                </p>
+                <p>88%</p>
+              </div>
+              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
+                <div
+                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
+                  style={{ width: "88%" }}
                 ></div>
               </div>
             </div>
