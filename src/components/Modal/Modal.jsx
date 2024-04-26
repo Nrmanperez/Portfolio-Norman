@@ -46,23 +46,25 @@ export const Modal = ({ isOpen, onClose, project }) => {
               <>
                 <ul>
                   <li className="mt-1">
-                    Se agregaron validaciones para las reglas y las condiciones
-                    para que un usuario pueda ser elegible para el prestamo
+                    Added validations for the rules and conditions for a user to
+                    be eligible for the loan
                   </li>
                   <li className="mt-1">
-                    Se creo un modal de configuraciones para donde se almacenan
-                    en la base de datos cuando un producto es creado
+                    A configuration modal was created for where to store in the
+                    database when a product is created.
                   </li>
                   <li className="mt-1">
-                    Se implemento la API de google map embebido en las
-                    aplicaciones de los formularios para los clientes donde cada
-                    usuario podra registrar su ubicacion, por medio de
-                    coordenadas o ingresando ciudad, codigo postal, estado, pais
+                    We implemented the google map API embedded in the form
+                    applications for the applications of the forms for the
+                    clients where each user will be able to user will be able to
+                    register their location, by means of coordinates or by
+                    entering city, zip code, state, country, etc.
                   </li>
                   <li className="mt-1">
-                    Se implementaron nuevos flujos de acciones de trabajo donde
-                    si se cumplan ciertas condiciones en los modelos se
-                    ejecutaran acciones programadas dentro de la aplicacion
+                    New workflows were implemented where if certain conditions
+                    are met in the models, programmed actions will be executed
+                    within the application. programmed actions will be executed
+                    within the application.
                   </li>
                 </ul>
               </>
@@ -73,21 +75,23 @@ export const Modal = ({ isOpen, onClose, project }) => {
               <>
                 <ul>
                   <li className="mt-1">
-                    Creado un componente para listar los usuarios de una
-                    empresa, donde el propietario de la empresa tendrá una
-                    opción para suplantar al usuario.
+                    Created a component to list the users of a company, where
+                    the owner of the company will have an option to impersonate
+                    the user.
                   </li>
                   <li className="mt-1">
-                    Hemos creado un botón de descarga para las diferentes
-                    plantillas, donde el propietario puede importar usuarios, y
-                    tendrá la opción de descargar dos plantillas, una en formato
-                    csv y otra en formato xlsx.
+                    We have created a download button for the different
+                    templates, where the owner can import users, and will have
+                    the option to download two templates, one in csv format and
+                    one in xlsx format. csv format and another in xlsx format.
                   </li>
                   <li className="mt-1">
-                    Se ha establecido la validación para crear VTO de tipo
-                    especial aunque ya existan VTO de tipo normal aprobadas,
-                    recortando el plazo de la VTO normal si la VTO especial se
-                    aprueba dentro del mismo intervalo de tiempo.
+                    Validation has been established to create special type VTOs
+                    even if there are already approved normal type VTOs. special
+                    VTO even if there are already approved VTOs of normal type,
+                    shortening the deadline of the normal VTO if the special VTO
+                    is approved within the same approved within the same time
+                    interval.
                   </li>
                 </ul>
               </>
