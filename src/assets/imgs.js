@@ -26,6 +26,7 @@ import drink3 from "./drinkFinder/drink_finder3.png";
 import drink4 from "./drinkFinder/drink_finder4.png";
 import nartt from "./nartt/nartt1.png";
 import nartt2 from "./nartt/nartt2.png";
+import decipher from "./decipher/decipher.png";
 
 export default {
   profile: profile,
@@ -56,4 +57,5 @@ export default {
   drink4: drink4,
   nartt: nartt,
   nartt2: nartt2,
+  decipher: decipher,
 };

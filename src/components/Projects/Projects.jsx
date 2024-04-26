@@ -152,13 +152,26 @@ export const Projects = () => {
       name: "NARTT",
       href: "#",
       imageSrc: images.nartt,
-      imageAlt: "Project Drink Finder",
+      imageAlt: "NARTT",
       description:
         "NARTT is a vacation application that allows you to request, visualize and have total control of your employees' vacation days",
-      description2: "",
+      description2: "Se trabajo en:",
       description3: "",
       imagesCart: [images.nartt, images.nartt2],
       technologies: ["Git", "VueJs", "Laravel", "TailwindCSS", "PostgresQL"],
+    },
+    {
+      id: 8,
+      name: "Decipher",
+      href: "#",
+      imageSrc: images.decipher,
+      imageAlt: "Decipher",
+      description:
+        "It is a software to manage loans. It is highly configurable and robust cloud-based that automates the entire loan process from start-up to funding. It provides instant access to business credit reports. It helps with access to the right credit data anytime, so lenders can make confident credit decisions quickly and efficiently",
+      description2: "Se trabajo en:",
+      description3: "",
+      imagesCart: [images.decipher],
+      technologies: ["Git", "VueJs", "Laravel", "Bootstrap", "PostgresQL"],
     },
   ];
 
