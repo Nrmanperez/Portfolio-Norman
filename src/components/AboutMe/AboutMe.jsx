@@ -49,7 +49,7 @@ export const AboutMe = () => {
               </div>
               <div className="col-span-2">
                 <li className="sm:text-2xl">Norman Perez</li>
-                <li className="sm:text-2xl">29 years old</li>
+                <li className="sm:text-2xl">30 years old</li>
                 <li className="sm:text-2xl">perez.norman30@gmail.com</li>
                 <li className="sm:text-2xl">(+505) 8295-6194</li>
               </div>
