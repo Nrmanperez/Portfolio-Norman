@@ -1,180 +1,21 @@
-export const Skills = () => {
-  return (
-    <section id="skills" className="p-5 mb-16">
-      <div className="mb-16">
-        <h2 className="text-center text-7xl">My Skills</h2>
+const groups = [
+  { number: "01", title: "Frontend", description: "Accessible, responsive interfaces with a focus on craft and usability.", skills: ["React", "Vue.js", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "Bootstrap"] },
+  { number: "02", title: "Backend", description: "Reliable APIs and application logic designed to scale with a product.", skills: ["Node.js", "NestJS", "Ruby on Rails", "Laravel", "PHP", "REST APIs"] },
+  { number: "03", title: "Data & tools", description: "Practical tooling that keeps teams shipping and products dependable.", skills: ["PostgreSQL", "Docker", "Git", "API integration", "HTML & CSS"] },
+];
+
+export const Skills = () => (
+  <section id="skills" className="skills-section">
+    <div className="section-wrap">
+      <div className="section-heading"><p className="eyebrow">What I bring to the table</p><span>02 — EXPERTISE</span></div>
+      <div className="skills-intro"><h2>Thoughtful work.<br /><span>Solid foundations.</span></h2><p>A versatile toolkit for taking a product from an early idea through to a reliable, polished launch.</p></div>
+      <div className="skills-grid">
+        {groups.map((group) => <article className="skill-card" key={group.number}>
+          <div className="skill-card-top"><span>{group.number}</span><span>↗</span></div>
+          <h3>{group.title}</h3><p>{group.description}</p>
+          <div className="skill-tags">{group.skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
+        </article>)}
       </div>
-      <div className="container mx-auto">
-        <div className="mt-9 grid grid-cols-1 md:grid-cols-2 md:gap-10">
-          <div className="flex-col">
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">React</p>
-                <p>90%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "90%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">VueJS</p>
-                <p>90%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "90%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">
-                  Ruby on Rails
-                </p>
-                <p>85%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "85%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">
-                  Bootstrap
-                </p>
-                <p>90%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "90%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">
-                  PostgresQL
-                </p>
-                <p>85%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "85%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">PHP</p>
-                <p>85%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "85%" }}
-                ></div>
-              </div>
-            </div>
-          </div>
-          <div className="flex-col">
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">NodeJS</p>
-                <p>80%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <span
-                  data-progress="75%"
-                  className="loader-liquid"
-                  style={{ width: "80%" }}
-                ></span>
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "80%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">
-                  TailwindCSS
-                </p>
-                <p>90%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "90%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">NestJS</p>
-                <p>77%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "77%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">
-                  TypeScript
-                </p>
-                <p>70%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "70%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">
-                  JavaScript
-                </p>
-                <p>95%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "95%" }}
-                ></div>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between">
-                <p className="mb-1 text-lg font-bold dark:text-black">
-                  Laravel
-                </p>
-                <p>88%</p>
-              </div>
-              <div className="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="h-4 bg-red-500 rounded-full dark:bg-red-500"
-                  style={{ width: "88%" }}
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);

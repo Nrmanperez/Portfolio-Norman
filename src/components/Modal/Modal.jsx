@@ -8,16 +8,16 @@ export const Modal = ({ isOpen, onClose, project }) => {
   }
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 overflow-y-auto">
+    <div className="modal-backdrop" role="presentation" onKeyDown={(event) => event.key === "Escape" && onClose()}>
       <div
-        className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+        className="fixed inset-0"
         onClick={onClose}
       ></div>
-      <div className="bg-white rounded-lg max-w-2xl mx-4 sm:mx-auto z-10">
-        <div className="p-4">
+      <div className="modal-panel" role="dialog" aria-modal="true" aria-labelledby="project-title">
+        <div>
           <div className="flex justify-between">
-            <h3 className="text-2xl font-bold mb-4">{project.name}</h3>
-            <AiOutlineClose onClick={onClose} size={30} />
+            <h3 id="project-title" className="mb-4">{project.name}</h3>
+            <button type="button" className="modal-close" onClick={onClose} aria-label="Close project details"><AiOutlineClose size={26} /></button>
           </div>
           <Carousel showArrows={true} showThumbs={false} dynamicHeight={true}>
             {project.imagesCart.map((image, index) => (
@@ -98,20 +98,19 @@ export const Modal = ({ isOpen, onClose, project }) => {
             </p>
           )}
         </div>
-        <div className="p-4">
-          <h3 className="text-2xl font-bold mb-4">Technologies</h3>
-          <div className="flex flex-wrap">
+        <div className="mt-6">
+          <h4 className="mb-4">Technologies</h4>
+          <div className="modal-tags">
             {project.technologies.map((technologie, index) => (
               <span
                 key={index}
-                className="bg-red-100 text-red-800 text-xs font-medium m-auto px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300"
+                className=""
               >
                 {technologie}
               </span>
             ))}
           </div>
         </div>
-        <div className="p-4 bg-gray-100"></div>
       </div>
     </div>
   );

@@ -1,26 +1,10 @@
-import { FaGithubSquare } from 'react-icons/fa';
-import { AiFillLinkedin } from 'react-icons/ai';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const icons = {
-  github: <FaGithubSquare/>,
-  Linkedin: <AiFillLinkedin/>
-}
-
-export const Footer = () => {
-  return (
-    <footer className="min-h-full bg-gray-500 text-center">
-      <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span className="text-sm text-black sm:text-center dark:text-gray-400">© 2023 Norman Perez. All Rights Reserved.
-      </span>
-      <ul className="flex justify-center items-center mt-3 md:mt-0">
-        <li className='flex justify-center items-center'>
-            <a href="https://github.com/Nrmanperez" className='text-black mr-6 md:mr-8' style={{ fontSize: '30px' }}>{icons.github}</a>
-        </li>
-        <li className='flex justify-center items-center'>
-            <a href="https://www.linkedin.com/in/nrmanperez" className='text-black mr-6 md:mr-8' style={{ fontSize: '30px' }}>{icons.Linkedin}</a>
-        </li>
-      </ul>
+export const Footer = () => (
+  <footer className="site-footer">
+    <div className="footer-inner section-wrap">
+      <div><p className="eyebrow">Have a good one in mind?</p><h2>Let&apos;s make it<br /><span>happen.</span></h2><a href="mailto:perez.norman30@gmail.com" className="footer-email">perez.norman30@gmail.com <span>↗</span></a></div>
+      <div className="footer-bottom"><span>© {new Date().getFullYear()} Norman Perez</span><span>Designed & built with care</span><div><a href="https://github.com/Nrmanperez" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub /></a><a href="https://www.linkedin.com/in/nrmanperez" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a></div></div>
     </div>
-</footer>
-  )
-}
+  </footer>
+);

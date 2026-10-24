@@ -176,43 +176,35 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="container mx-auto mb-16 mt-16">
-      <div>
-        <h2 className="text-center text-7xl">Portfolio</h2>
-      </div>
-      <div className="bg-white">
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <h2 className="sr-only">Products</h2>
-
-          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+    <section id="projects" className="projects-section section-wrap">
+      <div className="section-heading"><p className="eyebrow">Selected work</p><span>04 — PROJECTS</span></div>
+      <div className="projects-intro"><h2>A few things<br /><span>I&apos;ve helped build.</span></h2><p>A selection of products and applications shaped with good people and purposeful technology.</p></div>
+      <div className="project-grid">
             {products.map((product) => (
-              <div
+              <button
                 key={product.id}
-                className="group"
+                type="button"
+                className="project-card"
                 onClick={() => openModal(product)}
+                aria-label={`View ${product.name} project details`}
               >
-                <div
-                  className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7"
-                  style={{ height: "280px" }}
-                >
+                <div className="project-image-wrap">
                   <img
                     src={product.imageSrc}
                     alt={product.imageAlt}
-                    className="h-full w-full object-cover object-center group-hover:opacity-75 cursor-pointer"
+                    className="project-image"
                   />
+                  <span className="project-arrow">↗</span>
                 </div>
-                <h3 className="mt-4 text-xl font-bold text-gray-700">
-                  {product.name}
-                </h3>
-              </div>
+                <div className="project-title"><h3>{product.name}</h3><span>View project</span></div>
+                <div className="project-tech">{product.technologies.slice(0, 3).map((technology) => <span key={technology}>{technology}</span>)}</div>
+              </button>
             ))}
             <Modal
               isOpen={isOpen}
               onClose={closeModal}
               project={selectedProject}
             />
-          </div>
-        </div>
       </div>
     </section>
   );
